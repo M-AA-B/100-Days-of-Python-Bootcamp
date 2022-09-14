@@ -1,0 +1,25 @@
+# The Hurdles Loop Challenge 4
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+def up():
+    while wall_on_right():
+        move()
+def down():
+    while not wall_in_front():
+        move()
+def jump():
+    turn_left()
+    up()
+    turn_right()
+    move()
+    turn_right()
+    down()
+    turn_left()
+while not at_goal():
+    if wall_in_front():
+        jump()
+    else:
+        move()

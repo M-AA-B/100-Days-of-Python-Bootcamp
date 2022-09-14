@@ -1,0 +1,11 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": false,
+    "python.linting.flake8Enabled": true,
+    "cSpell.enabled": false,
+    "python.linting.flake8Args": [
+        "--max-line-length=500",
+        "--ignore=E402,F841,F401,E302,E305",
+    ],
+    
+}   
